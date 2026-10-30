@@ -1,0 +1,18 @@
+{
+  "cluster_directory": "5_v2_multivariable_weather_regimes",
+  "station_file": "3_most_overlapped_rwis_outputs/3_rwis_stations_reporting_all_weather_variables_every_year.csv",
+  "output_directory": "6_v2_weather_regime_visualizations",
+  "representative_scope": "fitting",
+  "representatives_per_cluster": 3,
+  "station_order": "north_to_south",
+  "show_3d": false,
+  "three_d_samples_per_cluster": 6,
+  "shared_color_quantiles": [
+    0.02,
+    0.98
+  ],
+  "fingerprint_color_limit": 2.5,
+  "plot_dpi": 300,
+  "save_pdf": true,
+  "font_family": "Times New Roman"
+}

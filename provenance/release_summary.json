@@ -1,0 +1,11 @@
+{
+  "scope": "Hourly aggregation through SGS; excludes visual simulation and operational decision experiments",
+  "originals_modified": false,
+  "full_observations_included": false,
+  "pickle_models_included": false,
+  "large_sgs_fields_included": false,
+  "selected_parent_events": 70,
+  "realization_count": 700,
+  "support_points": 122329,
+  "license_status": "Pending author/coauthor decision"
+}

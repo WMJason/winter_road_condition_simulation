@@ -1,0 +1,17 @@
+{
+  "support_file": "shared_cache/0b_road_support_points.csv.gz",
+  "station_file": "../RW_module/3_most_overlapped_rwis_outputs/3_rwis_stations_reporting_all_weather_variables_every_year.csv",
+  "reported_station_inventory": "../all_rwis_locations.csv",
+  "output_directory": "0c_elevation_outputs",
+  "cache_file": "shared_cache/0c_elevation_cache.sqlite",
+  "provider": "dem_tiles",
+  "dem_cache_directory": "shared_cache/0c_dem_tiles",
+  "dem_resolution_m": 30,
+  "dem_tile_width_m": 60000,
+  "service_url": "https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/getSamples",
+  "batch_size": 80,
+  "max_url_characters": 7500,
+  "attempts": 3,
+  "read_timeout_seconds": 60,
+  "request_gap_seconds": 0.2
+}

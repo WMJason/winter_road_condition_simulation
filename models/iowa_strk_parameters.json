@@ -1,0 +1,779 @@
+{
+  "0": {
+    "model_sha256": "83a936489b911e3d0f244ef09713aad52158f4b863d55562520ee264ac45a0a5",
+    "training_signature": "66bc83f9d52176ac7d0053d1304141cfc0691ea5fd0038ac262d2799e64cab83",
+    "projection": {
+      "origin_latitude": 41.87093283591348,
+      "origin_longitude": -93.159035,
+      "units": "kilometres",
+      "method": "local_equirectangular"
+    },
+    "selected_features": [
+      "y_km",
+      "hour_sin",
+      "x_km_sq",
+      "x_y_interaction",
+      "dayofyear_cos",
+      "hour_cos",
+      "elevation_m",
+      "y_km_sq",
+      "month_cos"
+    ],
+    "candidate_features": [
+      "x_km",
+      "y_km",
+      "x_km_sq",
+      "y_km_sq",
+      "x_y_interaction",
+      "elevation_m",
+      "hour_sin",
+      "hour_cos",
+      "month_sin",
+      "month_cos",
+      "dayofyear_sin",
+      "dayofyear_cos"
+    ],
+    "regression_coefficients": {
+      "const": 3.7334953891045384,
+      "y_km": -0.015044321899137122,
+      "hour_sin": 2.7496549782567445,
+      "x_km_sq": 1.5891002892673793e-05,
+      "x_y_interaction": 1.6614951870180737e-05,
+      "dayofyear_cos": -15.396395125134926,
+      "hour_cos": -1.8165475892137788,
+      "elevation_m": -0.005393918748172504,
+      "y_km_sq": 1.5230029854618005e-05,
+      "month_cos": 4.60826210659946
+    },
+    "regression_coefficient_units": "original covariate units, not z-scores",
+    "fitted_design_regression_coefficients": {
+      "const": -7.229727948801428,
+      "y_km": -1.239294969460479,
+      "hour_sin": 1.951996097000274,
+      "x_km_sq": 0.28945660283672486,
+      "x_y_interaction": 0.18251769499764403,
+      "dayofyear_cos": -3.0570014546033213,
+      "hour_cos": -1.273712927651073,
+      "elevation_m": -0.385394330094552,
+      "y_km_sq": 0.12128914167003117,
+      "month_cos": 1.3962629137798208
+    },
+    "regression_scaling": {
+      "y_km": {
+        "mean": 2.279659676936273,
+        "scale": 82.37625981211951
+      },
+      "hour_sin": {
+        "mean": 0.017193724638636727,
+        "scale": 0.7099058290716246
+      },
+      "x_km_sq": {
+        "mean": 18603.94850215895,
+        "scale": 18215.12492268016
+      },
+      "x_y_interaction": {
+        "mean": -1079.41098089829,
+        "scale": 10985.147379524646
+      },
+      "dayofyear_cos": {
+        "mean": 0.8424980776891233,
+        "scale": 0.19855306581556253
+      },
+      "hour_cos": {
+        "mean": 0.06399559647378562,
+        "scale": 0.7011723420922595
+      },
+      "elevation_m": {
+        "mean": 300.0193396297403,
+        "scale": 71.44978411569996
+      },
+      "y_km_sq": {
+        "mean": 6791.045028876464,
+        "scale": 7963.815096084938
+      },
+      "month_cos": {
+        "mean": 0.7266581490355467,
+        "scale": 0.3029912104565933
+      }
+    },
+    "variogram": {
+      "nugget": 2.940829508378198e-11,
+      "partial_sill": 29.363276937834655,
+      "space_range_km": 1999.99999991008,
+      "time_range_hours": 14.955061406620297,
+      "model_family": "exponential",
+      "covariance_form": "separable_product",
+      "fit_success": true,
+      "weighted_fit_rmse": 0.8810149118819474,
+      "nugget_to_total_sill": 1.0015331444788393e-12,
+      "parameter_at_bound": true
+    }
+  },
+  "1": {
+    "model_sha256": "bc8cc63abf73b5cbd611d8556fdf8bd633437f5e5a5ff912185ccd19a49b49d9",
+    "training_signature": "66bc83f9d52176ac7d0053d1304141cfc0691ea5fd0038ac262d2799e64cab83",
+    "projection": {
+      "origin_latitude": 41.87093283591348,
+      "origin_longitude": -93.159035,
+      "units": "kilometres",
+      "method": "local_equirectangular"
+    },
+    "selected_features": [
+      "y_km",
+      "hour_sin",
+      "dayofyear_cos",
+      "hour_cos",
+      "x_km_sq",
+      "x_y_interaction",
+      "elevation_m",
+      "x_km",
+      "month_cos",
+      "y_km_sq"
+    ],
+    "candidate_features": [
+      "x_km",
+      "y_km",
+      "x_km_sq",
+      "y_km_sq",
+      "x_y_interaction",
+      "elevation_m",
+      "hour_sin",
+      "hour_cos",
+      "month_sin",
+      "month_cos",
+      "dayofyear_sin",
+      "dayofyear_cos"
+    ],
+    "regression_coefficients": {
+      "const": 5.0008878355769015,
+      "y_km": -0.009936184032055295,
+      "hour_sin": 2.187227574863709,
+      "dayofyear_cos": -7.076283439432884,
+      "hour_cos": -1.6621232731516415,
+      "x_km_sq": 5.139451400606903e-06,
+      "x_y_interaction": 9.252740001310805e-06,
+      "elevation_m": -0.00457745861642164,
+      "x_km": -0.0012537737343729528,
+      "month_cos": 2.305313265151123,
+      "y_km_sq": 4.772123038667095e-06
+    },
+    "regression_coefficient_units": "original covariate units, not z-scores",
+    "fitted_design_regression_coefficients": {
+      "const": -0.44741868244242955,
+      "y_km": -0.8185056773656203,
+      "hour_sin": 1.4669564874567116,
+      "dayofyear_cos": -2.1676329741043068,
+      "hour_cos": -1.1746911825816735,
+      "x_km_sq": 0.09361574929609824,
+      "x_y_interaction": 0.10164271257882228,
+      "elevation_m": -0.3270584299418768,
+      "x_km": -0.17056748356545345,
+      "month_cos": 0.9855269549650353,
+      "y_km_sq": 0.03800430549571174
+    },
+    "regression_scaling": {
+      "y_km": {
+        "mean": 2.2796596769362725,
+        "scale": 82.37625981211951
+      },
+      "hour_sin": {
+        "mean": -0.18356000199986458,
+        "scale": 0.670692206113084
+      },
+      "dayofyear_cos": {
+        "mean": 0.7158548481224034,
+        "scale": 0.3063236503536704
+      },
+      "hour_cos": {
+        "mean": 0.13036260353389367,
+        "scale": 0.706741311884935
+      },
+      "x_km_sq": {
+        "mean": 18603.948502158946,
+        "scale": 18215.12492268016
+      },
+      "x_y_interaction": {
+        "mean": -1079.4109808982898,
+        "scale": 10985.147379524647
+      },
+      "elevation_m": {
+        "mean": 300.0193396297402,
+        "scale": 71.44978411569996
+      },
+      "x_km": {
+        "mean": -9.806942756373209,
+        "scale": 136.04327390919465
+      },
+      "month_cos": {
+        "mean": 0.6511474108235886,
+        "scale": 0.42750240059041605
+      },
+      "y_km_sq": {
+        "mean": 6791.045028876464,
+        "scale": 7963.815096084938
+      }
+    },
+    "variogram": {
+      "nugget": 0.9333117921767677,
+      "partial_sill": 11.718439015051521,
+      "space_range_km": 492.746741802128,
+      "time_range_hours": 5.459641952047383,
+      "model_family": "gaussian",
+      "covariance_form": "separable_product",
+      "fit_success": true,
+      "weighted_fit_rmse": 0.8383627019002359,
+      "nugget_to_total_sill": 0.07376937835698924,
+      "parameter_at_bound": false
+    }
+  },
+  "2": {
+    "model_sha256": "c8ac417f1f04acc87b3d2d26ad2db315ba8774788ec830c53b624e05ac756127",
+    "training_signature": "66bc83f9d52176ac7d0053d1304141cfc0691ea5fd0038ac262d2799e64cab83",
+    "projection": {
+      "origin_latitude": 41.87093283591348,
+      "origin_longitude": -93.159035,
+      "units": "kilometres",
+      "method": "local_equirectangular"
+    },
+    "selected_features": [
+      "y_km",
+      "hour_sin",
+      "dayofyear_cos",
+      "elevation_m",
+      "x_y_interaction",
+      "y_km_sq",
+      "hour_cos",
+      "month_sin",
+      "x_km_sq"
+    ],
+    "candidate_features": [
+      "x_km",
+      "y_km",
+      "x_km_sq",
+      "y_km_sq",
+      "x_y_interaction",
+      "elevation_m",
+      "hour_sin",
+      "hour_cos",
+      "month_sin",
+      "month_cos",
+      "dayofyear_sin",
+      "dayofyear_cos"
+    ],
+    "regression_coefficients": {
+      "const": 8.691662358291035,
+      "y_km": -0.011943899372260751,
+      "hour_sin": 2.3567145426314373,
+      "dayofyear_cos": -4.932987754752191,
+      "elevation_m": -0.008722308023124292,
+      "x_y_interaction": 2.0793289344200223e-05,
+      "y_km_sq": 2.334736735514226e-05,
+      "hour_cos": -1.3190889999552473,
+      "month_sin": -1.2761577110314077,
+      "x_km_sq": 4.6816259466428464e-06
+    },
+    "regression_coefficient_units": "original covariate units, not z-scores",
+    "fitted_design_regression_coefficients": {
+      "const": 3.0496256531326447,
+      "y_km": -0.9838937578591629,
+      "hour_sin": 1.6562439017597053,
+      "dayofyear_cos": -2.035368231810744,
+      "elevation_m": -0.6232070252428682,
+      "x_y_interaction": 0.22841734795113883,
+      "y_km_sq": 0.1859341165967226,
+      "hour_cos": -0.9258993144586262,
+      "month_sin": -0.7308840283353888,
+      "x_km_sq": 0.0852764014593602
+    },
+    "regression_scaling": {
+      "y_km": {
+        "mean": 2.2796596769362725,
+        "scale": 82.37625981211951
+      },
+      "hour_sin": {
+        "mean": 0.09759095445611424,
+        "scale": 0.7027766289889282
+      },
+      "dayofyear_cos": {
+        "mean": 0.5784748871308524,
+        "scale": 0.4126035443428728
+      },
+      "elevation_m": {
+        "mean": 300.0193396297402,
+        "scale": 71.44978411569994
+      },
+      "x_y_interaction": {
+        "mean": -1079.41098089829,
+        "scale": 10985.147379524646
+      },
+      "y_km_sq": {
+        "mean": 6791.045028876464,
+        "scale": 7963.815096084939
+      },
+      "hour_cos": {
+        "mean": 0.062327241026093404,
+        "scale": 0.7019233080482357
+      },
+      "month_sin": {
+        "mean": 0.4038075677264811,
+        "scale": 0.5727223383265682
+      },
+      "x_km_sq": {
+        "mean": 18603.948502158946,
+        "scale": 18215.12492268016
+      }
+    },
+    "variogram": {
+      "nugget": 2.360632807263391e-15,
+      "partial_sill": 24.571006280792115,
+      "space_range_km": 1999.9999999999109,
+      "time_range_hours": 19.952183949860892,
+      "model_family": "spherical",
+      "covariance_form": "separable_product",
+      "fit_success": true,
+      "weighted_fit_rmse": 1.1464161990362802,
+      "nugget_to_total_sill": 9.607391656192639e-17,
+      "parameter_at_bound": true
+    }
+  },
+  "3": {
+    "model_sha256": "1a43fb5db2a73663cb46eafd0409cff4f1ffc980300ad04a212e9048b4478a7c",
+    "training_signature": "66bc83f9d52176ac7d0053d1304141cfc0691ea5fd0038ac262d2799e64cab83",
+    "projection": {
+      "origin_latitude": 41.87093283591348,
+      "origin_longitude": -93.159035,
+      "units": "kilometres",
+      "method": "local_equirectangular"
+    },
+    "selected_features": [
+      "y_km",
+      "dayofyear_cos",
+      "hour_cos",
+      "hour_sin",
+      "month_sin",
+      "elevation_m",
+      "x_km_sq",
+      "x_y_interaction"
+    ],
+    "candidate_features": [
+      "x_km",
+      "y_km",
+      "x_km_sq",
+      "y_km_sq",
+      "x_y_interaction",
+      "elevation_m",
+      "hour_sin",
+      "hour_cos",
+      "month_sin",
+      "month_cos",
+      "dayofyear_sin",
+      "dayofyear_cos"
+    ],
+    "regression_coefficients": {
+      "const": 11.260311956484767,
+      "y_km": -0.012312144704140472,
+      "dayofyear_cos": -4.954167317601125,
+      "hour_cos": -1.7363942255922928,
+      "hour_sin": 1.5101625944644659,
+      "month_sin": -0.9378593054463829,
+      "elevation_m": -0.004137798257058842,
+      "x_km_sq": 5.091566614885996e-06,
+      "x_y_interaction": 6.4175461287589724e-06
+    },
+    "regression_coefficient_units": "original covariate units, not z-scores",
+    "fitted_design_regression_coefficients": {
+      "const": 7.590687591696714,
+      "y_km": -1.014228430992687,
+      "dayofyear_cos": -1.8484580115292295,
+      "hour_cos": -1.2107137201402332,
+      "hour_sin": 1.0454720611961672,
+      "month_sin": -0.7300812559105145,
+      "elevation_m": -0.29564479218117384,
+      "x_km_sq": 0.09274352194229617,
+      "x_y_interaction": 0.07049769003931516
+    },
+    "regression_scaling": {
+      "y_km": {
+        "mean": 2.2796596769362725,
+        "scale": 82.37625981211951
+      },
+      "dayofyear_cos": {
+        "mean": 0.3976259725805859,
+        "scale": 0.3731117447248992
+      },
+      "hour_cos": {
+        "mean": 0.15046315981141975,
+        "scale": 0.6972573982888318
+      },
+      "hour_sin": {
+        "mean": -0.10920644778883144,
+        "scale": 0.6922910586107536
+      },
+      "month_sin": {
+        "mean": 0.09793045160928214,
+        "scale": 0.7784549896458356
+      },
+      "elevation_m": {
+        "mean": 300.0193396297403,
+        "scale": 71.44978411569996
+      },
+      "x_km_sq": {
+        "mean": 18603.94850215895,
+        "scale": 18215.12492268016
+      },
+      "x_y_interaction": {
+        "mean": -1079.4109808982898,
+        "scale": 10985.147379524646
+      }
+    },
+    "variogram": {
+      "nugget": 4.65458203235062e-12,
+      "partial_sill": 34.10653045625973,
+      "space_range_km": 1999.9999999977056,
+      "time_range_hours": 16.26287033793466,
+      "model_family": "exponential",
+      "covariance_form": "separable_product",
+      "fit_success": true,
+      "weighted_fit_rmse": 1.120248604260627,
+      "nugget_to_total_sill": 1.3647187122475858e-13,
+      "parameter_at_bound": true
+    }
+  },
+  "4": {
+    "model_sha256": "46c4f609d69f175c1a6d78b522841ce3d9eaa080c349ff3c2469068fa2ee77cf",
+    "training_signature": "66bc83f9d52176ac7d0053d1304141cfc0691ea5fd0038ac262d2799e64cab83",
+    "projection": {
+      "origin_latitude": 41.87093283591348,
+      "origin_longitude": -93.159035,
+      "units": "kilometres",
+      "method": "local_equirectangular"
+    },
+    "selected_features": [
+      "y_km",
+      "dayofyear_cos",
+      "hour_sin",
+      "hour_cos",
+      "x_km_sq",
+      "x_y_interaction",
+      "x_km",
+      "elevation_m",
+      "month_cos",
+      "y_km_sq"
+    ],
+    "candidate_features": [
+      "x_km",
+      "y_km",
+      "x_km_sq",
+      "y_km_sq",
+      "x_y_interaction",
+      "elevation_m",
+      "hour_sin",
+      "hour_cos",
+      "month_sin",
+      "month_cos",
+      "dayofyear_sin",
+      "dayofyear_cos"
+    ],
+    "regression_coefficients": {
+      "const": 13.199395969241635,
+      "y_km": -0.015297587957699418,
+      "dayofyear_cos": -11.599233163503953,
+      "hour_sin": 4.219664014231892,
+      "hour_cos": -3.5090950023670135,
+      "x_km_sq": 3.7516716494400323e-06,
+      "x_y_interaction": 1.644315074775125e-05,
+      "x_km": -0.004527109245956756,
+      "elevation_m": -0.005739634388476418,
+      "month_cos": 3.059665535000086,
+      "y_km_sq": -7.660901975137974e-06
+    },
+    "regression_coefficient_units": "original covariate units, not z-scores",
+    "fitted_design_regression_coefficients": {
+      "const": 9.367477603806076,
+      "y_km": -1.260158080102198,
+      "dayofyear_cos": -4.482147353288917,
+      "hour_sin": 2.949732481452784,
+      "hour_cos": -2.2317833983700344,
+      "x_km_sq": 0.06833716776342771,
+      "x_y_interaction": 0.18063043434778833,
+      "x_km": -0.6158827631645427,
+      "elevation_m": -0.4100956379596876,
+      "month_cos": 1.6129589338715982,
+      "y_km_sq": -0.061010006799230715
+    },
+    "regression_scaling": {
+      "y_km": {
+        "mean": 2.279659676936273,
+        "scale": 82.37625981211951
+      },
+      "dayofyear_cos": {
+        "mean": 0.41400694585422215,
+        "scale": 0.38641755796336863
+      },
+      "hour_sin": {
+        "mean": 0.21283669815931877,
+        "scale": 0.6990443958343744
+      },
+      "hour_cos": {
+        "mean": -0.24807628552927127,
+        "scale": 0.6359997084332611
+      },
+      "x_km_sq": {
+        "mean": 18603.948502158946,
+        "scale": 18215.12492268016
+      },
+      "x_y_interaction": {
+        "mean": -1079.4109808982903,
+        "scale": 10985.147379524646
+      },
+      "x_km": {
+        "mean": -9.806942756373209,
+        "scale": 136.04327390919465
+      },
+      "elevation_m": {
+        "mean": 300.0193396297403,
+        "scale": 71.44978411569996
+      },
+      "month_cos": {
+        "mean": 0.29875101190799375,
+        "scale": 0.5271683834133697
+      },
+      "y_km_sq": {
+        "mean": 6791.045028876464,
+        "scale": 7963.815096084938
+      }
+    },
+    "variogram": {
+      "nugget": 1.0909786653561774e-28,
+      "partial_sill": 46.281146384773216,
+      "space_range_km": 1999.9999999999998,
+      "time_range_hours": 10.114826675311079,
+      "model_family": "exponential",
+      "covariance_form": "separable_product",
+      "fit_success": true,
+      "weighted_fit_rmse": 2.3101274383344172,
+      "nugget_to_total_sill": 2.357285310709408e-30,
+      "parameter_at_bound": true
+    }
+  },
+  "5": {
+    "model_sha256": "8236307dc6cba743f950bbc58026ac21eab2e25a857720fbad33379b260479d4",
+    "training_signature": "66bc83f9d52176ac7d0053d1304141cfc0691ea5fd0038ac262d2799e64cab83",
+    "projection": {
+      "origin_latitude": 41.87093283591348,
+      "origin_longitude": -93.159035,
+      "units": "kilometres",
+      "method": "local_equirectangular"
+    },
+    "selected_features": [
+      "y_km",
+      "hour_cos",
+      "elevation_m",
+      "hour_sin",
+      "dayofyear_cos",
+      "month_sin",
+      "x_km"
+    ],
+    "candidate_features": [
+      "x_km",
+      "y_km",
+      "x_km_sq",
+      "y_km_sq",
+      "x_y_interaction",
+      "elevation_m",
+      "hour_sin",
+      "hour_cos",
+      "month_sin",
+      "month_cos",
+      "dayofyear_sin",
+      "dayofyear_cos"
+    ],
+    "regression_coefficients": {
+      "const": 18.75060636291149,
+      "y_km": -0.014943670781194983,
+      "hour_cos": -2.9373972709443503,
+      "elevation_m": -0.0062037650404531,
+      "hour_sin": 1.5611286723471267,
+      "dayofyear_cos": -4.79645936923016,
+      "month_sin": -1.4114412041592572,
+      "x_km": 0.002305391629450079
+    },
+    "regression_coefficient_units": "original covariate units, not z-scores",
+    "fitted_design_regression_coefficients": {
+      "const": 16.362993501141197,
+      "y_km": -1.231003706818497,
+      "hour_cos": -2.023314821664523,
+      "elevation_m": -0.44325767284490064,
+      "hour_sin": 1.1314151127078684,
+      "dayofyear_cos": -1.5062280082067614,
+      "month_sin": -1.1987808847210624,
+      "x_km": 0.31363302491324163
+    },
+    "regression_scaling": {
+      "y_km": {
+        "mean": 2.2796596769362725,
+        "scale": 82.37625981211951
+      },
+      "hour_cos": {
+        "mean": 0.01613242660766986,
+        "scale": 0.6888121132535958
+      },
+      "elevation_m": {
+        "mean": 300.0193396297403,
+        "scale": 71.44978411569996
+      },
+      "hour_sin": {
+        "mean": 0.005198612254238906,
+        "scale": 0.7247417415034776
+      },
+      "dayofyear_cos": {
+        "mean": 0.12484924568223993,
+        "scale": 0.3140291394667883
+      },
+      "month_sin": {
+        "mean": -0.11932337902069759,
+        "scale": 0.8493310817258812
+      },
+      "x_km": {
+        "mean": -9.806942756373209,
+        "scale": 136.04327390919465
+      }
+    },
+    "variogram": {
+      "nugget": 3.1805051574418966e-12,
+      "partial_sill": 37.73913228410841,
+      "space_range_km": 1999.9999999990646,
+      "time_range_hours": 23.884177325840174,
+      "model_family": "spherical",
+      "covariance_form": "separable_product",
+      "fit_success": true,
+      "weighted_fit_rmse": 1.4225278444679423,
+      "nugget_to_total_sill": 8.427605418953707e-14,
+      "parameter_at_bound": true
+    }
+  },
+  "6": {
+    "model_sha256": "0e9a874272656b98f6492a0809ad2982f0c1f511cfef1cf0f9f0a04b8bebb137",
+    "training_signature": "66bc83f9d52176ac7d0053d1304141cfc0691ea5fd0038ac262d2799e64cab83",
+    "projection": {
+      "origin_latitude": 41.87093283591348,
+      "origin_longitude": -93.159035,
+      "units": "kilometres",
+      "method": "local_equirectangular"
+    },
+    "selected_features": [
+      "y_km",
+      "hour_sin",
+      "hour_cos",
+      "dayofyear_cos",
+      "y_km_sq",
+      "x_y_interaction",
+      "month_sin",
+      "dayofyear_sin",
+      "elevation_m",
+      "x_km",
+      "x_km_sq"
+    ],
+    "candidate_features": [
+      "x_km",
+      "y_km",
+      "x_km_sq",
+      "y_km_sq",
+      "x_y_interaction",
+      "elevation_m",
+      "hour_sin",
+      "hour_cos",
+      "month_sin",
+      "month_cos",
+      "dayofyear_sin",
+      "dayofyear_cos"
+    ],
+    "regression_coefficients": {
+      "const": 18.856613114832673,
+      "y_km": -0.011598771933047392,
+      "hour_sin": 7.4384400956922185,
+      "hour_cos": -7.680218167480813,
+      "dayofyear_cos": -13.51634080510989,
+      "y_km_sq": -9.620261524700077e-06,
+      "x_y_interaction": 1.4108400241689029e-05,
+      "month_sin": 15.297012560538533,
+      "dayofyear_sin": -15.119613327244908,
+      "elevation_m": -0.00707371826808711,
+      "x_km": -0.002215047238628553,
+      "x_km_sq": -4.2312762441722165e-06
+    },
+    "regression_coefficient_units": "original covariate units, not z-scores",
+    "fitted_design_regression_coefficients": {
+      "const": 22.28518649828403,
+      "y_km": -0.9554634502582317,
+      "hour_sin": 4.562016090745822,
+      "hour_cos": -3.7983999352977285,
+      "dayofyear_cos": -4.877072184595396,
+      "y_km_sq": -0.07661398395869158,
+      "x_y_interaction": 0.1549828559442751,
+      "month_sin": 12.747839330742886,
+      "dayofyear_sin": -13.858809069541188,
+      "elevation_m": -0.5054156431501069,
+      "x_km": -0.30134227820654946,
+      "x_km_sq": -0.07707322536996583
+    },
+    "regression_scaling": {
+      "y_km": {
+        "mean": 2.2796596769362725,
+        "scale": 82.37625981211951
+      },
+      "hour_sin": {
+        "mean": 0.322696473963905,
+        "scale": 0.6133027936042392
+      },
+      "hour_cos": {
+        "mean": -0.5245263584533326,
+        "scale": 0.4945692755683321
+      },
+      "dayofyear_cos": {
+        "mean": 0.08872965950674658,
+        "scale": 0.3608278494096276
+      },
+      "y_km_sq": {
+        "mean": 6791.045028876465,
+        "scale": 7963.815096084939
+      },
+      "x_y_interaction": {
+        "mean": -1079.4109808982903,
+        "scale": 10985.147379524646
+      },
+      "month_sin": {
+        "mean": 0.1775061259154922,
+        "scale": 0.8333548318858214
+      },
+      "dayofyear_sin": {
+        "mean": 0.14749222849424246,
+        "scale": 0.9166113424718473
+      },
+      "elevation_m": {
+        "mean": 300.0193396297403,
+        "scale": 71.44978411569994
+      },
+      "x_km": {
+        "mean": -9.806942756373209,
+        "scale": 136.04327390919465
+      },
+      "x_km_sq": {
+        "mean": 18603.948502158946,
+        "scale": 18215.12492268016
+      }
+    },
+    "variogram": {
+      "nugget": 4.085242756881339e-15,
+      "partial_sill": 65.3228941894051,
+      "space_range_km": 1999.9999999999561,
+      "time_range_hours": 23.40696839572164,
+      "model_family": "exponential",
+      "covariance_form": "separable_product",
+      "fit_success": true,
+      "weighted_fit_rmse": 1.4919079943648323,
+      "nugget_to_total_sill": 6.25392185630369e-17,
+      "parameter_at_bound": true
+    }
+  }
+}

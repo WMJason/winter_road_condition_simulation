@@ -1,0 +1,8 @@
+{
+  "step7_config": "../7_v2_cluster_strk_config.json",
+  "events_per_cluster": 10,
+  "planned_realizations_per_event": 10,
+  "output_directory": "9_selected_weather_events_elevation",
+  "make_plots": true,
+  "plot_dpi": 220
+}

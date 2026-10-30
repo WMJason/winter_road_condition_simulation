@@ -1,0 +1,21 @@
+{
+  "synthetic": true,
+  "reproduces_iowa_results": false,
+  "seed": 42,
+  "history_shape": [
+    7,
+    60,
+    5
+  ],
+  "sample_count": 36,
+  "fitting_samples": 24,
+  "selected_k": 3,
+  "elbow_k": 3,
+  "imputed_cells": 816,
+  "raw_records": 30240,
+  "hourly_records": 15120,
+  "retained_pca_components": 13,
+  "realization_count": 9,
+  "conditioning_max_error_c": 8.881784197001252e-16,
+  "covariance_selection": "Demo uses empirical-fit RMSE, not the full Iowa event-fold selection procedure"
+}

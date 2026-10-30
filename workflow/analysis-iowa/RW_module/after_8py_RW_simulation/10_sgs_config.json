@@ -1,0 +1,23 @@
+{
+  "events_directory": "9_selected_weather_events_elevation",
+  "model_metadata": "9_selected_weather_events_elevation/9_cluster_model_metadata.json",
+  "support_points_file": "../../decision_making/shared_cache/0b_road_support_points.csv.gz",
+  "output_directory": "10_sgs_completed_rwis_fields_elevation",
+  "conditioning_policy": "completed",
+  "support_elevation_file": "../../decision_making/0c_elevation_outputs/0c_road_support_points_with_elevation.csv.gz",
+  "n_realizations": 10,
+  "neighbor_count": 80,
+  "kriging_ridge": 1e-08,
+  "simulation_hour_offsets": [
+    0
+  ],
+  "path_groups": 1,
+  "threads_per_worker": 1,
+  "make_plots": true,
+  "max_support_points": null,
+  "random_seed": 20261016,
+  "float_precision": "float32",
+  "workers": 4,
+  "overwrite": false,
+  "events": null
+}

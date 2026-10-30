@@ -1,0 +1,18 @@
+{
+  "audit_passed": true,
+  "file_count": 178,
+  "total_bytes": 3010141,
+  "original_data_required_for_full_rerun": true,
+  "python": "3.10.7",
+  "local_platform": "Darwin",
+  "windows_execution_tested": false,
+  "license_status": "Pending",
+  "checks": [
+    "Python syntax",
+    "No machine-specific home paths",
+    "No observation databases or large simulation archives",
+    "Source-export checksum accounting",
+    "70 parents / 700 SGS realization summaries",
+    "Portable numerical parameter shapes"
+  ]
+}

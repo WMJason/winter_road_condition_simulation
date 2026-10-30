@@ -1,0 +1,8 @@
+{
+  "step7_config": "7_v2_cluster_strk_config.json",
+  "output_directory": "8_v2_elevation_nowcast_evaluation",
+  "event_scope": "protected",
+  "thread_limit": 2,
+  "make_plots": true,
+  "plot_dpi": 300
+}
