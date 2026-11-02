@@ -1,7 +1,7 @@
 {
   "audit_passed": true,
-  "file_count": 178,
-  "total_bytes": 3010141,
+  "file_count": 207,
+  "total_bytes": 373613944,
   "original_data_required_for_full_rerun": true,
   "python": "3.10.7",
   "local_platform": "Darwin",
@@ -10,7 +10,7 @@
   "checks": [
     "Python syntax",
     "No machine-specific home paths",
-    "No observation databases or large simulation archives",
+    "No raw observation databases; browser-sized simulation archives",
     "Source-export checksum accounting",
     "70 parents / 700 SGS realization summaries",
     "Portable numerical parameter shapes"
