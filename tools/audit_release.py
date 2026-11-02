@@ -27,7 +27,8 @@ def main():
             text = path.read_text()
             assert ('/'+'Users/') not in text and ('G:'+chr(92)+'Mingjian') not in text, f'Personal path in {relative}'
         assert path.suffix not in {'.db', '.sqlite', '.h5', '.hdf5', '.joblib', '.pkl', '.graphml', '.tif'}, relative
-        assert path.stat().st_size < 10*1024**2, f'Large file: {relative}'
+        limit = 24*1024**2 if path.parent == ROOT/'data/weather_events' else 10*1024**2
+        assert path.stat().st_size < limit, f'Large file: {relative}'
     with (ROOT/'provenance/export_manifest.csv').open(newline='') as stream:
         for row in csv.DictReader(stream):
             if row['exported_sha256'] == 'consolidated':
@@ -50,11 +51,13 @@ def main():
         assert model['centers'].shape == (7, 45)
     models = json.loads((ROOT/'models/iowa_strk_parameters.json').read_text())
     assert set(models) == set(map(str, range(7)))
+    from read_weather_events import verify
+    verify()
     summary = dict(audit_passed=True, file_count=len(paths), total_bytes=sum(p.stat().st_size for p in paths),
                    original_data_required_for_full_rerun=True, python=platform.python_version(),
                    local_platform=platform.system(), windows_execution_tested=False,
                    license_status='Pending', checks=['Python syntax', 'No machine-specific home paths',
-                   'No observation databases or large simulation archives', 'Source-export checksum accounting',
+                   'No raw observation databases; browser-sized simulation archives', 'Source-export checksum accounting',
                    '70 parents / 700 SGS realization summaries', 'Portable numerical parameter shapes'])
     (ROOT/'provenance/release_validation.json').write_text(json.dumps(summary, indent=2)+'\n')
     print(json.dumps(summary, indent=2))
