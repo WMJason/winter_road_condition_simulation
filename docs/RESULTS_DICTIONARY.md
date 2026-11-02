@@ -23,7 +23,7 @@
 ## Parent events and SGS
 
 - Parent-event tables record cluster, parent/sample IDs, dates, selection distances, and temporal spacing. Their ten nearest-centroid events per group are not frequency-weighted random samples of all Iowa weather.
-- `sgs/10_sgs_manifest.csv`: one row per parent, including cluster, realization/support counts, conditioning count, runtime, and archive size. Its HDF5 paths are provenance references to omitted large files.
+- `sgs/10_sgs_manifest.csv`: one row per parent, including cluster, realization/support counts, conditioning count, runtime, and archive size. Its HDF5 paths are provenance references, not public download paths. The actual reference arrays are supplied as portable NPZ archives under `data/weather_events/`; use their `scenario_manifest.csv` to locate each realization.
 - `sgs/all_realization_statistics.csv`: consolidated statistics from each parent's original `10_realization_statistics.csv`. Read headers for field/residual means, spread, and diagnostics; these are map summaries, not station-validated model errors.
 - `sgs/all_realization_seeds.csv`: original path/draw seeds, with parent identifiers added when absent. Seeds need the same model, observations, support order, and numerical environment to be reproducible.
 - `sgs/10_sgs_run_summary.json`: completion and configuration accounting. Recorded source paths are sanitized provenance, not runnable configurations.

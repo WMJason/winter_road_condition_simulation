@@ -4,10 +4,10 @@
 
 - The original SQLite archive and full station-hour observation tables.
 - Individual completed seven-hour station histories and fitted model pickle/joblib objects, which can embed observations.
-- Road GraphML, full support-point/elevation arrays, DEM tiles, and individual SGS temperature fields.
+- The routable road GraphML and original DEM tiles. The derived support catalogue and all 700 saved issue-time temperature/visual fields are now supplied separately under `data/weather_events/`.
 - Roadway imagery, image URLs, annotations, and classifier weights.
 
-Public release of these inputs requires separate source/permission review. Compact aggregate results and numerical parameter exports do not replace the missing histories for a full rerun.
+Public release of the remaining raw inputs requires separate source/permission review. Reading the supplied reference fields requires no original observations; regenerating them still requires the missing histories and matching inputs. See [the dataset guide](WEATHER_EVENTS.md).
 
 ## SQLite schema used by Step 2a
 
