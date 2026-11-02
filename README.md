@@ -2,7 +2,7 @@
 
 A compact research package using road weather information system (RWIS) observations for hourly data preparation, weather-event grouping, road surface temperature (RST) estimation with spatiotemporal regression kriging (STRK), and conditional networkwide simulation. Iowa is the case study; the workflow can be adapted to another region after changing its inputs and regional assumptions.
 
-This release stops at RST simulation. Image classification, visual-condition simulation, routing, and maintenance prioritization are not included.
+The code release covers hourly preparation through RST simulation. The accompanying data release also includes the matching simulated drivability and maintenance-need reference maps for all 700 realizations. Image-classification and operational-decision code are not included in this package.
 
 ## What the pipeline does
 
@@ -27,6 +27,19 @@ The Iowa run produced **seven groups, 70 parent events, and 700 realizations**. 
 | `examples/` | A runnable synthetic demonstration, separate from the Iowa findings |
 | `docs/` | Methods, input requirements, output definitions, and reproduction limits |
 | `provenance/` | Source-to-export checksums and release accounting |
+| `data/weather_events/` | All 700 issue-time RST and visual reference maps, shared support locations, metadata, and checksums |
+
+## Download the 700 Simulated Weather Events
+
+The full fields are now included, not just their statistical summaries. Download the repository using **Code > Download ZIP**, extract it, and follow [the dataset guide](docs/WEATHER_EVENTS.md). Data files are split into ordinary ZIP archives smaller than 24 MiB so the authors can upload them through GitHub's website without GitHub Desktop or Git LFS. The reader accesses those archives directly; no HDF5 installation is needed to read them.
+
+```sh
+python -m pip install numpy
+python tools/read_weather_events.py --verify
+python tools/read_weather_events.py --scenario C00_R01_S5447__SGS01
+```
+
+These are **70 parent events with ten realizations each**, not 700 independent historical observations. The fields represent issue time only, not seven-hour simulated trajectories. They preserve the saved RST trend/residual arrays and the matching visual categories without rounding or resimulation. The raw image collection, raw station histories, and a routable road graph are not included.
 
 ## Quick Start: No Original Data Required
 
@@ -55,7 +68,7 @@ A checked example figure and summary are included under `examples/reference_outp
 
 ## Reproduce the Iowa Workflow
 
-The full RWIS SQLite archive, individual station histories, road graph/support catalogue, elevation arrays, and full SGS fields are deliberately excluded. See [Data Requirements](docs/DATA_REQUIREMENTS.md) before running a full stage.
+The full RWIS SQLite archive, individual station histories, routable road graph, and elevation rasters are excluded. The shared support-point catalogue (including elevations) and all 700 saved reference fields are included under `data/weather_events/`. Reading those fields does not require rerunning SGS; regenerating them from original observations still requires the inputs listed in [Data Requirements](docs/DATA_REQUIREMENTS.md).
 
 Run commands from the repository root:
 
@@ -92,7 +105,7 @@ Optional road downloading/elevation preparation needs `requirements-geospatial.t
 - `results/iowa/7_v2_elevation_standardized_nowcast_models/`: regression coefficients, scaling, VIF, empirical semivariograms, model comparisons, and cross-validation metrics.
 - `results/iowa/8_v2_elevation_nowcast_evaluation/`: protected-event evaluation summaries.
 - `results/iowa/parent_events/`: the 70 selected parent identifiers and timing information.
-- `results/iowa/sgs/`: all 700 realization statistics, recorded seeds, completion accounting, and an example network figure. The full temperature arrays are omitted.
+- `results/iowa/sgs/`: all 700 realization statistics, recorded seeds, completion accounting, and an example network figure. Full temperature and visual arrays are available separately under `data/weather_events/`.
 
 See [Methods](docs/METHODS.md) and [Results Dictionary](docs/RESULTS_DICTIONARY.md). Exported paths containing `${RESEARCH_ROOT}` document original provenance; they are not live input configurations.
 
